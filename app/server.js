@@ -20,4 +20,14 @@ app.get("/hexToRgb", function(req, res) {
   res.send(JSON.stringify(rgb));
 });
 
+app.get("/randomCountry", function (req, res) {
+    res.send('foo');
+})
+
+console.log('go here');
+console.log('http://localhost:3000/rgbToHex?red=111&green=33&blue=44');
+console.log('or here');
+console.log('http://localhost:3000/randomCountry');
+
+
 app.listen(3000);
