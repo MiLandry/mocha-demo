@@ -1,6 +1,7 @@
 var express = require("express");
 var app = express();
 var converter = require("./converter");
+var country = require("./country");
 
 app.get("/rgbToHex", function(req, res) {
   var red   = parseInt(req.query.red, 10);
@@ -21,7 +22,7 @@ app.get("/hexToRgb", function(req, res) {
 });
 
 app.get("/randomCountry", function (req, res) {
-    res.send('foo');
+    res.send(country.getRandomCountry());
 })
 
 console.log('go here');

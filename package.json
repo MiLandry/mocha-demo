@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start" : "nodemon ./app/server.js",
-    "test": "./node_modules/.bin/mocha --reporter spec"
+    "start": "nodemon ./app/server.js",
+    "test": "mocha ./test"
   },
   "author": "",
   "license": "ISC",
@@ -13,5 +13,8 @@
     "express": "^4.14.0",
     "mocha": "^3.0.2",
     "request": "^2.74.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0"
   }
 }
