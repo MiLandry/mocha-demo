@@ -1,5 +1,6 @@
 // https://github.com/shouldjs/should.js
 // should is a BDD style assertion library
+// out of the box it doesn't play nice with mocha, no cli reporting, only crashes when test fails.
 
 var should = require('should');
 
@@ -19,8 +20,3 @@ should(user).have.property('name', 'tj');
 // also you can test in that way for null's
 should(null).not.be.ok();
 
-someAsyncTask(foo, function(err, result){
-  should.not.exist(err);
-  should.exist(result);
-  result.bar.should.equal(foo);
-});
