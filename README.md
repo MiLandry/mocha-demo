@@ -3,11 +3,11 @@
 ## Why
 To demo and play with mocha API and Mock API
 
+The master branch has a test suite configered, some of the tests are broken intentionally. Maybe I will make a branch to fix them but no reason.
+
 ## Getting Up and Running
 
 `npm i`
-
-`npm i -g mocha`
 
 ## Run Locally
 
